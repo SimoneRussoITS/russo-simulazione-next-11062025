@@ -1,0 +1,436 @@
+/* Custom styles for TechFlow Solutions - Digital Innovation Palette */
+
+:root {
+    /* Digital Innovation Palette */
+    --primary-color: #1E3A8A; /* Blu tech professionale */
+    --secondary-color: #0D9488; /* Teal innovativo */
+    --accent-color: #F59E0B; /* Ambra per CTA */
+    --success-color: #10B981; /* Verde successo */
+    --info-color: #0EA5E9; /* Blu informativo */
+    --warning-color: #F59E0B; /* Ambra warning */
+    --danger-color: #EF4444; /* Rosso danger */
+    --light-color: #F9FAFB; /* Grigio chiarissimo */
+    --dark-color: #1F2937; /* Grigio scuro professionale */
+    --neutral-color: #6B7280; /* Grigio medio */
+    --white-color: #FFFFFF; /* Bianco puro */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    min-height: 70vh;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15) !important;
+}
+
+/* Hero Card Animation */
+.hero-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Scambio Items */
+.scambio-item {
+    transition: all 0.3s ease;
+}
+
+.scambio-item:hover {
+    transform: translateX(5px);
+}
+
+/* Ability Box */
+.ability-box {
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    transition: all 0.3s ease;
+    color: var(--white-color);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #1E40AF, var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.4);
+}
+
+/* Accent Button for CTA */
+.btn-accent {
+    background: linear-gradient(45deg, var(--accent-color), #FBBF24);
+    border: none;
+    transition: all 0.3s ease;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.btn-accent:hover {
+    background: linear-gradient(45deg, #D97706, var(--accent-color));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+    color: var(--dark-color);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: var(--secondary-color);
+    border: none;
+    transition: all 0.3s ease;
+    color: var(--white-color);
+}
+
+.btn-secondary:hover {
+    background: #0F766E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.4);
+}
+
+/* Navbar Enhancements */
+.navbar-brand {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav .nav-link {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: translateY(-2px);
+    color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Footer Enhancements */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+footer a {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color) !important;
+    transition: color 0.3s ease;
+}
+
+/* Form Enhancements */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(30, 58, 138, 0.25);
+}
+
+.form-control:hover {
+    border-color: var(--secondary-color);
+}
+
+/* Badge Enhancements */
+.badge {
+    font-size: 0.7em;
+    padding: 0.4em 0.6em;
+}
+
+.badge-primary {
+    background-color: var(--primary-color);
+}
+
+.badge-secondary {
+    background-color: var(--secondary-color);
+}
+
+.badge-accent {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading {
+    animation: pulse 2s infinite;
+}
+
+/* Service Cards Enhancement */
+.service-card {
+    border: 1px solid rgba(13, 148, 136, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 25px rgba(13, 148, 136, 0.15);
+}
+
+.service-icon {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Statistics Section */
+.stat-number {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.stat-label {
+    color: var(--neutral-color);
+    font-weight: 500;
+}
+
+/* Technology Logos */
+.tech-logo {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.tech-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonial-card {
+    border-left: 4px solid var(--secondary-color);
+    background-color: var(--light-color);
+}
+
+.testimonial-quote {
+    color: var(--dark-color);
+    font-style: italic;
+}
+
+.testimonial-author {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+        text-align: center;
+    }
+
+    .hero-section .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .card-hover:hover {
+        transform: none;
+    }
+
+    .scambio-item:hover {
+        transform: none;
+    }
+
+    .navbar-nav .nav-link:hover {
+        transform: none;
+    }
+}
+
+/* Accessibility Enhancements */
+.btn:focus,
+.form-control:focus,
+.nav-link:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #1E3A8A;
+        --secondary-color: #0D9488;
+        --accent-color: #D97706;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .btn,
+    footer {
+        display: none !important;
+    }
+
+    .hero-section {
+        background: none !important;
+        color: black !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-color: #1F2937;
+        --dark-color: #F9FAFB;
+    }
+
+    .card {
+        background-color: #374151;
+        border-color: #4B5563;
+        color: #F9FAFB;
+    }
+
+    .card-body {
+        color: #E5E7EB;
+    }
+
+    .testimonial-card {
+        background-color: #374151;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide in animations for sections */
+.slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Utility Classes */
+.text-primary-custom {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary-custom {
+    color: var(--secondary-color) !important;
+}
+
+.text-accent-custom {
+    color: var(--accent-color) !important;
+}
+
+.bg-primary-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary-custom {
+    background-color: var(--secondary-color) !important;
+}
+
+.bg-accent-custom {
+    background-color: var(--accent-color) !important;
+}
+
+/* CTA Section Enhancement */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+    color: var(--white-color);
+}
+
+.cta-section .btn-accent {
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
